@@ -1,0 +1,31 @@
+<body>
+
+
+    <br>
+
+    <a href="Mongodb/add">Add Employee (MongoDB)</a>
+
+    <!-- Table containing eid, phone email -->
+    <table>
+        <tr>
+            <th>EID</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        <% for (let i=0; i < employees.length; i++) { %>
+            <tr>
+                <td>
+                    <%= employees[i]._id %>
+                </td>
+                <td>
+                    <%= employees[i].phone %>
+                </td>
+                <td>
+                    <%= employees[i].email %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+    <a href="/">Home</a>
+</body>
